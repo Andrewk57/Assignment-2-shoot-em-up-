@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
     
 {
     public float speed;
-
+    
     void Start()
     {
         
@@ -26,4 +26,5 @@ public class PlayerMove : MonoBehaviour
         }
         
     }
+    
 }

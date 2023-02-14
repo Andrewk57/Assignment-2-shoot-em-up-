@@ -11,6 +11,10 @@ public class shoot : MonoBehaviour
 
     private void Update()
     {
+        shot();
+    }
+    void shot()
+    {
         if (Input.GetKeyDown(KeyCode.Mouse0)) //&& ChangeSceneScript.isPaused == false)
         {
 
