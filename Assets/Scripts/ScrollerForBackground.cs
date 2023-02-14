@@ -15,9 +15,6 @@ public class ScrollerForBackground : MonoBehaviour
     void Update()
     {
         transform.Translate(translation: Vector3.down*speed*Time.deltaTime);
-        if (transform.position.y < 18.04082f)
-        {
-            transform.position = startArea;
-        }
+        
     }
 }
