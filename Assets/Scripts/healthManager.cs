@@ -22,6 +22,7 @@ public class healthManager : MonoBehaviour
     {
         if (collision.tag == "End")
         {
+            health++;
             winScreen.SetActive(true);
             Time.timeScale = 0f;
         }
