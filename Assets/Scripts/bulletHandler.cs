@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class bulletHandler : MonoBehaviour
 {
     
-    public float am = 3f;
+    public float am = 2f;
     public float health = 3f;
     public static bool isDead = false;
     private float stored;

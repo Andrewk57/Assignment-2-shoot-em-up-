@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1249089815842209842}
   - component: {fileID: 6429090324251616528}
   - component: {fileID: 3738292206252060583}
-  - component: {fileID: 8646941536306318161}
+  - component: {fileID: 1035184570177229320}
   m_Layer: 0
   m_Name: enemyBullet
   m_TagString: Enemy
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   am: 3
   health: 3
---- !u!61 &8646941536306318161
+--- !u!61 &1035184570177229320
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

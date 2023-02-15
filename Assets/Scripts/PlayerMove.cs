@@ -6,11 +6,14 @@ public class PlayerMove : MonoBehaviour
     
 {
     public float speed;
-    
+    Rigidbody2D rb;
+
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
+
+   
 
     // Update is called once per frame
     void Update()
@@ -18,11 +21,11 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Translate(Vector2.right * speed * Time.deltaTime);
+            rb.velocity = Vector3.right * speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Translate(Vector2.left * speed * Time.deltaTime);
+            rb.velocity = -Vector3.right * speed * Time.deltaTime;
         }
         
     }

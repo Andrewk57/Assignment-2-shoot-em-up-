@@ -10,20 +10,37 @@ public class healthManager : MonoBehaviour
     public static bool isDead = false;
     private float health = 3f;
     public Image healthI;
-    
+    public GameObject winScreen;
     public GameObject deathScreen;
     private void Start()
     {
         isDead = false;
+        winScreen.SetActive(false);
         deathScreen.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.tag == "End")
+        {
+            winScreen.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            winScreen.SetActive(false);
+            Time.timeScale = 1f;    
+        }
         takeDamage();
+
         if (collision.tag == "Enemy")
         {
+            
             Destroy(collision.gameObject);
             Debug.Log("Destroyed bullet");
+        }
+        else
+        {
+            return;
         }
         //Destroy(collision.gameObject);
     }

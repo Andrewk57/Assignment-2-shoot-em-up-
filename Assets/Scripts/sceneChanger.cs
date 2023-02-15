@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class sceneChanger : MonoBehaviour
 {
     public GameObject PauseMenu;
-    public bool isPaused = false;
+    public static bool isPaused = false;
     private void Start()
     {
         Time.timeScale = 1f;
