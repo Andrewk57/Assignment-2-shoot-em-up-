@@ -9,10 +9,22 @@ public class enemyShootReg : MonoBehaviour
     private float lastShot;
     public Transform bulletSpawnPoint;
     public float speed = 10f;
+    public ParticleSystem explosion;
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "Player Bullet")
+        {
+            
+            explosion.Play();
+            Debug.Log("Animation Played");
+            Destroy(this.gameObject);
+            Destroy(collision.gameObject);
+        }
     }
 
     // Update is called once per frame

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1673804816194703366}
   m_Layer: 0
   m_Name: bullet
-  m_TagString: Untagged
+  m_TagString: Player Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   am: 3
+  health: 3
 --- !u!50 &1673804816194703366
 Rigidbody2D:
   serializedVersion: 4
@@ -146,4 +147,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
